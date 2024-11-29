@@ -207,7 +207,7 @@ def forwards_func(apps, schema_editor):
     driver = apps.get_model("codingchallenge", "Driver")
     event = apps.get_model("codingchallenge", "Event")
     race = apps.get_model("codingchallenge", "Race")
-    e = event.objects.create(name="Monaco Grand Prix")
+    e = event.objects.create(name="Sample event")
     drivers = driver.objects.bulk_create(
         [
             driver(**i)
